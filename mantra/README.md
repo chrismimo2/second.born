@@ -1,0 +1,25 @@
+# Telekom Running Mantra — v4 preview
+
+A standalone Greek questionnaire using the exact five questions and 25 answer choices in `Tele_Mantra_v4.pdf`. All choices are personal preferences; there are no correct or incorrect answers.
+
+Open `index.html` in a modern browser to play. The game also works without an Internet connection. To serve it locally from the repository root:
+
+```sh
+python3 -m http.server 8001 --bind 127.0.0.1 --directory mantra
+```
+
+The experience includes a required nickname, one answer per question, progress, back navigation with answer preservation, a result, answer review/editing, copy, transparent SVG export, and restart. Session data stays in the current browser tab's session storage. No player data is sent to a server.
+
+## Preview scope
+
+The question and answer wording follows the supplied PDF. The result screen extends the PDF, which ends with the loading screen. This preview composes Greek mantras locally from the selected answers; it does not call a generative AI service. Connecting a production AI generator requires the original backend or a separate server-side integration. Do not put API keys in this HTML.
+
+The exported SVG contains magenta text on a transparent background. It is not a photorealistic shoelace render. Use the prompts in [SHOELACE_PROMPTS.md](SHOELACE_PROMPTS.md) to create that artwork with an image-generation tool.
+
+## Hosting
+
+The complete application is the single `index.html` file. It can be hosted under any static-site path without a build step or external dependencies. The separate `marathon42` racing game is unchanged.
+
+## Validation
+
+Browser checks cover the exact PDF copy, completion gates, all five questions, back navigation, result generation, SVG download, answer editing, restart, keyboard operation, and mobile layout. The tests use Python Playwright with the system `/usr/bin/chromium`; they do not require an npm install.
