@@ -2,6 +2,14 @@
 
 A standalone Greek questionnaire using the exact five questions and 25 answer choices in `Tele_Mantra_v4.pdf`. All choices are personal preferences; there are no correct or incorrect answers.
 
+## Instant mantra-only demo
+
+Open `mantra-demo.html` in a modern browser. Everything is embedded in this single file: all five questions, reviewed first-person copy, the revised master prompt, and export controls. No nickname, Start screen, installation, API key, or network connection is required. Select answers, try an alternative, or choose a preset to demonstrate the outputs. The master-prompt panel shows the revised prompt populated with those selected answers and can copy it.
+
+Both the game and demo enforce 2–5 words, approved Greek punctuation and a final full stop, and fall back to valid reviewed copy if a candidate fails. First-person plural is eligible only when the answers explicitly involve shared participation. Display, copy and SVG use Greek capitals without tonos while preserving diaeresis. The name hint in the full game correctly says the name appears above the mantra.
+
+The demo selects reviewed copy locally; it does not call a live AI service. The revised prompt is stored in `MASTER_PROMPT.md` and embedded in both HTML files for future server-side integration.
+
 ## Upload to Netlify
 
 1. Extract the downloaded ZIP.

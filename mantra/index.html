@@ -24,7 +24,7 @@
    <p class="welcome-copy">Απάντησε στις ερωτήσεις,<br>και δημιούργησε το δικό σου<br>προσωπικό AI Running Mantra</p>
    <label class="nickname-label" for="nickname">Συμπλήρωσε το όνομα ή το nick σου και ξεκίνα!</label>
    <input class="nickname" id="nickname" name="nickname" autocomplete="nickname" maxlength="32" required placeholder="Το όνομα ή το nick σου" aria-label="Το όνομα ή το nick σου" aria-describedby="nameHint">
-   <p class="name-hint" id="nameHint" aria-live="polite">Το όνομά σου θα εμφανιστεί στο mantra.</p>
+   <p class="name-hint" id="nameHint" aria-live="polite">Το όνομά σου θα εμφανιστεί πάνω από το mantra.</p>
    <button class="primary" id="startButton" type="button">ΞΕΚΙΝΑ</button>
    <p class="welcome-foot">WHAT DRIVES YOU?</p>
   </form>
@@ -119,20 +119,22 @@
 ]</script>
 <script id="mantraCatalog" type="application/json">[
   {
-    "text": "Η αγάπη δίνει ρυθμό.",
+    "text": "Τρέχω για όσα αγαπώ.",
     "tags": [
       "love",
-      "connection",
-      "family"
-    ]
+      "purpose",
+      "connection"
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Με τον δικό μου ρυθμό.",
+    "text": "Βρίσκω τον δικό μου ρυθμό.",
     "tags": [
       "steady",
       "self",
       "confidence"
-    ]
+    ],
+    "voice": "singular"
   },
   {
     "text": "Σήμερα κάνω την αρχή.",
@@ -140,54 +142,53 @@
       "beginning",
       "self",
       "renewal"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Τρέχω για όσα αγαπώ.",
-    "tags": [
-      "love",
-      "purpose",
-      "connection"
-    ]
-  },
-  {
-    "text": "Κάθε βήμα με πάει μπροστά.",
-    "tags": [
-      "progress",
-      "steady"
-    ]
-  },
-  {
-    "text": "Σήμερα πάω λίγο παραπέρα.",
+    "text": "Πηγαίνω λίγο πιο πέρα.",
     "tags": [
       "progress",
       "steady",
       "confidence"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Κάθε αρχή φέρνει δύναμη.",
+    "text": "Μετράω τις δικές μου νίκες.",
+    "tags": [
+      "progress",
+      "self",
+      "confidence"
+    ],
+    "voice": "singular"
+  },
+  {
+    "text": "Ξεκινώ ξανά, βρίσκω ρυθμό.",
     "tags": [
       "renewal",
       "rest",
       "steady"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Η αρχή είναι δική μου.",
+    "text": "Ξεκινώ από εδώ που είμαι.",
     "tags": [
       "beginning",
       "presence",
       "confidence"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Η ανάσα μου δίνει ρυθμό.",
+    "text": "Δίνω χώρο στις ανάσες μου.",
     "tags": [
       "rest",
       "steady",
       "self"
-    ]
+    ],
+    "voice": "singular"
   },
   {
     "text": "Παίρνω ανάσα, βρίσκω ρυθμό.",
@@ -195,15 +196,26 @@
       "rest",
       "renewal",
       "steady"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Εδώ βρίσκω τον εαυτό μου.",
+    "text": "Ξαναρχίζω με τον ρυθμό μου.",
+    "tags": [
+      "renewal",
+      "steady",
+      "self"
+    ],
+    "voice": "singular"
+  },
+  {
+    "text": "Βρίσκω χώρο για μένα.",
     "tags": [
       "self",
-      "presence",
-      "freedom"
-    ]
+      "freedom",
+      "presence"
+    ],
+    "voice": "singular"
   },
   {
     "text": "Δίνω ρυθμό στην υπόσχεσή μου.",
@@ -211,7 +223,8 @@
       "commitment",
       "self",
       "confidence"
-    ]
+    ],
+    "voice": "singular"
   },
   {
     "text": "Εμπιστεύομαι τα βήματά μου.",
@@ -219,23 +232,26 @@
       "confidence",
       "self",
       "steady"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Κάθε βήμα, δική μου νίκη.",
+    "text": "Προχωρώ με μικρά βήματα.",
     "tags": [
       "progress",
-      "steady",
-      "beginning"
-    ]
+      "beginning",
+      "steady"
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Η διαδρομή είναι δική μου.",
+    "text": "Χαράζω τη δική μου διαδρομή.",
     "tags": [
-      "self",
       "freedom",
-      "enjoyment"
-    ]
+      "self",
+      "confidence"
+    ],
+    "voice": "singular"
   },
   {
     "text": "Χαίρομαι κάθε μου βήμα.",
@@ -243,7 +259,8 @@
       "enjoyment",
       "presence",
       "playful"
-    ]
+    ],
+    "voice": "singular"
   },
   {
     "text": "Σήμερα βγαίνω για μένα.",
@@ -251,22 +268,26 @@
       "self",
       "freedom",
       "beginning"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Η χαρά μου δίνει ρυθμό.",
+    "text": "Τρέχω με χαρά.",
     "tags": [
       "enjoyment",
-      "playful"
-    ]
+      "playful",
+      "presence"
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Ο δρόμος μάς φέρνει κοντά.",
+    "text": "Βρίσκουμε χαρά στη διαδρομή.",
     "tags": [
       "together",
       "connection",
-      "family"
-    ]
+      "enjoyment"
+    ],
+    "voice": "plural"
   },
   {
     "text": "Μαζί βρίσκουμε τον ρυθμό μας.",
@@ -274,55 +295,62 @@
       "together",
       "connection",
       "steady"
-    ]
+    ],
+    "voice": "plural"
   },
   {
-    "text": "Κάθε βήμα μάς ενώνει.",
+    "text": "Ενώνουμε τα βήματά μας.",
     "tags": [
       "together",
       "connection",
       "purpose",
-      "love"
-    ]
+      "family"
+    ],
+    "voice": "plural"
   },
   {
-    "text": "Οι άνθρωποί μου δίνουν ρυθμό.",
+    "text": "Αντλώ δύναμη από την αγάπη.",
     "tags": [
+      "love",
       "family",
       "connection",
-      "love"
-    ]
+      "confidence"
+    ],
+    "voice": "singular"
   },
   {
     "text": "Τρέχω για κάτι μεγαλύτερο.",
     "tags": [
       "purpose",
-      "commitment",
-      "connection"
-    ]
+      "commitment"
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Ο σκοπός μάς δίνει ρυθμό.",
+    "text": "Προχωράμε για όσα μας ενώνουν.",
     "tags": [
       "purpose",
       "together",
-      "commitment"
-    ]
+      "connection"
+    ],
+    "voice": "plural"
   },
   {
-    "text": "Κάθε διαδρομή, μια ανακάλυψη.",
+    "text": "Ανακαλύπτω χαρά στη διαδρομή.",
     "tags": [
       "discovery",
       "enjoyment",
       "freedom"
-    ]
+    ],
+    "voice": "singular"
   },
   {
     "text": "Βρίσκω χαρά σε νέους δρόμους.",
     "tags": [
       "discovery",
       "enjoyment"
-    ]
+    ],
+    "voice": "singular"
   },
   {
     "text": "Βγαίνω έξω, επιστρέφω σε μένα.",
@@ -330,38 +358,182 @@
       "freedom",
       "presence",
       "self"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Η μουσική γίνεται δύναμή μου.",
-    "tags": [
-      "music",
-      "enjoyment",
-      "beginning"
-    ]
-  },
-  {
-    "text": "Το τραγούδι μου γίνεται διαδρομή.",
+    "text": "Ακολουθώ τη μουσική μου.",
     "tags": [
       "music",
       "freedom",
       "enjoyment"
-    ]
+    ],
+    "voice": "singular"
   },
   {
-    "text": "Μια βόλτα γίνεται περιπέτεια.",
+    "text": "Δίνω ρυθμό στη μέρα μου.",
+    "tags": [
+      "music",
+      "playful",
+      "presence"
+    ],
+    "voice": "singular"
+  },
+  {
+    "text": "Κάνω τη βόλτα περιπέτεια.",
     "tags": [
       "playful",
       "discovery",
       "family"
-    ]
+    ],
+    "voice": "singular"
   }
 ]</script>
+<script id="masterPromptData" type="text/plain">ROLE AND TASK
+
+You are a senior native-Greek advertising copywriter creating
+personal running mantras for a Telekom campaign associated
+with the Athens Marathon.
+
+Write ONE short Greek mantra inspired by the participant’s
+five selected answers.
+
+The audience includes experienced runners, beginners, people
+returning to running, and people who simply enjoy the experience.
+Do not assume that winning, speed, or endurance is everyone’s goal.
+
+WHAT THE MANTRA MUST DO
+
+Create a memorable phrase the participant could genuinely
+choose to repeat to themselves while running.
+
+It must work as both:
+• A natural phrase of personal encouragement.
+• A distinctive, visually clear campaign headline.
+
+Express one coherent idea. Every word must earn its place.
+
+READING THE ANSWERS
+
+Use these as complementary sources of meaning:
+
+1. PERSONAL VICTORY — what the participant wants this experience
+   to mean.
+2. MOTIVATION — who or what makes the effort worthwhile.
+3. ENCOURAGEMENT — what makes the next step possible.
+4. INNER VOICE — how the participant wants to be supported.
+5. EVERYDAY SPARK — a practical detail that may add warmth,
+   personality, or playfulness.
+
+Choose one central emotional direction supported by the answers.
+Do not force every answer into the wording.
+Let the preferred inner voice guide the level of intensity.
+
+Do not merely quote, concatenate, or summarise the answers.
+Do not invent relationships, achievements, hardships, illness,
+bereavement, or recovery.
+
+CREATIVE STANDARD
+
+The line must feel hopeful, personal, believable, and memorable.
+
+Its energy may be determined, playful, warm, tender, or quietly
+confident, according to the answers.
+
+Respect beginning, resting, enjoying, reconnecting, and making
+personal progress as valid motivations.
+
+Give the participant agency. Avoid guilt, shame, comparison,
+commands to prove their worth, and pressure to ignore their limits.
+
+When an answer contains difficulty or absence, draw on its
+underlying love, courage, or purpose without pretending the
+difficulty has disappeared.
+
+Choose the phrase because it fits a selected motivation,
+not merely because it sounds universally positive.
+
+VOICE AND GRAMMAR
+
+Write in the participant’s own voice, in the first person,
+as words they say to themselves (for example «Τρέχω…», «Βρίσκω…»).
+Use the first-person plural only when the selected answers are
+about doing it together.
+The inner-voice answers are written as someone else cheering.
+Turn their spirit into the participant’s own words; do not copy
+their second-person form.
+
+The participant’s gender is unknown. Never use a word whose form
+depends on it: no adjectives or participles describing the
+participant (for example «έτοιμος/έτοιμη», «δυνατός/δυνατή»,
+«μόνος/μόνη»). Verbs, nouns and adverbs are safe.
+
+GREEK COPY AND RHYTHM
+
+Use natural, contemporary Greek with correct spelling and accents.
+Avoid English translated word-for-word and inflated abstractions.
+
+The phrase should sound effortless when spoken aloud and
+remain clear when rendered in capitals as handwritten
+shoelace lettering.
+
+Do not force rhyme, wordplay, running terminology, or brand names.
+Use them only when they improve the phrase naturally.
+
+LENGTH AND COMPOSITION
+
+• Write 2–5 words. Five is the absolute maximum.
+• Count articles, pronouns, and prepositions.
+• Punctuation does not reduce the word count.
+• Do not join words artificially to evade the limit.
+• Preserve correct Greek orthography, including forms such as «ό,τι».
+• Use only letters, spaces, commas, and full stops.
+  No hyphens, dashes, slashes, digits, emoji, exclamation marks,
+  or quotation marks. Write «βήμα βήμα», not «βήμα-βήμα».
+• End with a full stop. One comma or one inner full stop may
+  split the phrase into two beats.
+• Express one complete idea.
+• Do not append a dedication, explanation, supporting sentence,
+  or alternative version.
+
+PARTICIPANT’S SELECTED ANSWERS
+
+Personal victory: {{answer_1}}
+Motivation: {{answer_2}}
+Encouragement: {{answer_3}}
+Preferred inner voice: {{answer_4}}
+Everyday spark: {{answer_5}}
+
+FINAL SELECTION
+
+Consider distinct possible directions and select the strongest
+for personal relevance, natural Greek, spoken rhythm,
+memorability, and brevity.
+
+Before returning it, verify:
+• It contains no more than five words.
+• It reflects an identifiable selected motivation.
+• It is in the participant’s own first-person voice.
+• It uses no word whose form depends on the participant’s gender.
+• It uses only letters, spaces, commas, and full stops,
+  and ends with a full stop.
+• It sounds hopeful without making an unsupported promise.
+• It works as a mantra rather than an explanation.
+• It contains no appended second thought.
+
+OUTPUT
+
+Return only ONE final Greek mantra, on a single line.
+
+No nickname, introduction, labels, quotation marks,
+explanation, alternatives, or additional text.</script>
 <script>
 (()=>{'use strict';
 const $=id=>document.getElementById(id),questions=JSON.parse($('questionsData').textContent);
 const storageKey='telekom-mantra-v4',screens=['welcome','quiz','loading','result'];
-const mantraCatalog=JSON.parse($('mantraCatalog').textContent),MAX_MANTRA_WORDS=5;
+const mantraCatalog=JSON.parse($('mantraCatalog').textContent),promptTemplate=$('masterPromptData').textContent;
+
+const MAX_MANTRA_WORDS=5,FALLBACK_MANTRA='Βρίσκω τον ρυθμό μου.';
 const answerThemes=[
  [['progress','confidence'],['renewal','rest'],['beginning'],['commitment'],['enjoyment','presence']],
  [['self'],['family','love'],['connection','together'],['love'],['purpose']],
@@ -369,23 +541,34 @@ const answerThemes=[
  [['steady','self'],['together'],['progress','confidence'],['self','confidence'],['enjoyment','playful']],
  [['music'],['freedom','presence'],['playful'],['family','together'],['discovery']]
 ];
+function validateMantra(value){
+ if(typeof value!=='string'||/[\r\n]/u.test(value))throw new Error('One Greek line required');
+ const text=value.normalize('NFC').trim().replace(/ +/gu,' '),words=text.split(' ');
+ const lexical=text.replace(/ό,τι/giu,'ότι').replaceAll('Ο,ΤΙ','ΟΤΙ');
+ if(words.length<2||words.length>MAX_MANTRA_WORDS||!text.endsWith('.')||!(/^[\p{L}\p{M} .,]+$/u.test(text))||/[^\p{Script=Greek}\p{M} .,]/u.test(text)||words.some(word=>!/[\p{L}]/u.test(word))||/[,.](?=\S)/u.test(lexical)||(text.slice(0,-1).match(/[,.]/gu)||[]).length>1)throw new Error('Use 2–5 Greek words and approved punctuation');
+ return text;
+}
+function toGreekUpper(text){return text.toLocaleUpperCase('el-GR').normalize('NFD').replace(/[\u0300\u0301\u0342]/gu,'').normalize('NFC')}
+function allowsPlural(selection){return selection[2]===1||selection[3]===1||selection[4]===3}
+function rankMantras(selection){
+ if(!Array.isArray(selection)||selection.length!==5||selection.some((value,i)=>!Number.isInteger(value)||!answerThemes[i][value]))return [];
+ const weights=[6,5,2,4,1],signature=selection.reduce((value,choice)=>value*5+choice,0);
+ return mantraCatalog.flatMap((entry,index)=>{
+  try{if(!entry||!Array.isArray(entry.tags)||!['singular','plural'].includes(entry.voice)||(entry.voice==='plural'&&!allowsPlural(selection)))return [];const text=validateMantra(entry.text);return [{entry:{...entry,text},score:selection.reduce((sum,choice,i)=>sum+(answerThemes[i][choice].some(tag=>entry.tags.includes(tag))?weights[i]:0),0),tie:(signature*31+index*17)%97}]}catch(_){return []}
+ }).sort((a,b)=>b.score-a.score||b.tie-a.tie);
+}
+function createMantra(selection){try{const ranked=rankMantras(selection);return ranked.length?ranked[0].entry.text:FALLBACK_MANTRA}catch(_){return FALLBACK_MANTRA}}
+function safeMantra(value,selection){try{return validateMantra(value)}catch(_){return createMantra(selection)}}
+function buildPrompt(selection){return questions.reduce((text,question,i)=>text.replaceAll('{{answer_'+(i+1)+'}}',question.answers[selection[i]]||''),promptTemplate)}
 let step=0,answers=Array(questions.length).fill(null),nickname='',generationTimer=null,currentMantra='';
 function remember(){try{sessionStorage.setItem(storageKey,JSON.stringify({nickname,step,answers}))}catch(_){}}
 function restore(){try{const data=JSON.parse(sessionStorage.getItem(storageKey)||'null');if(!data||!Array.isArray(data.answers))return;nickname=typeof data.nickname==='string'?data.nickname.slice(0,32):'';answers=questions.map((q,i)=>Number.isInteger(data.answers[i])&&data.answers[i]>=0&&data.answers[i]<q.answers.length?data.answers[i]:null);step=Number.isInteger(data.step)&&data.step>=0&&data.step<questions.length?data.step:0}catch(_){}}
 function show(name){screens.forEach(key=>$(key+'Screen').hidden=key!==name);window.scrollTo(0,0)}
 function renderQuestion(){show('quiz');const question=questions[step];$('questionTitle').textContent=question.question;$('answers').replaceChildren();question.answers.forEach((text,index)=>{const label=document.createElement('label');label.className='answer'+(answers[step]===index?' is-selected':'');const input=document.createElement('input');input.type='radio';input.name='answer';input.value=String(index);input.checked=answers[step]===index;input.addEventListener('change',()=>{answers[step]=index;for(const option of $('answers').children)option.classList.toggle('is-selected',option.querySelector('input').checked);$('nextButton').disabled=false;remember()});const span=document.createElement('span');span.textContent=text;label.append(input,span);$('answers').append(label)});$('nextButton').disabled=answers[step]===null;$('progress').setAttribute('aria-valuenow',String(step+1));$('progress').setAttribute('aria-valuetext',`Ερώτηση ${step+1} από ${questions.length}`);$('progressLabel').textContent=`Ερώτηση ${step+1} από ${questions.length}`;$('progress').style.setProperty('--position',`${step/5*100}%`);document.querySelectorAll('.stop').forEach((stop,i)=>stop.classList.toggle('done',i<=step));$('questionTitle').focus({preventScroll:true});remember()}
-// Offline preview: select one complete reviewed line, never concatenate answers.
-// MASTER_PROMPT.md specifies the separate live AI generation brief.
-function validateMantra(value){if(typeof value!=='string')throw new Error('Invalid mantra');const text=value.normalize('NFC').trim().replace(/\s+/gu,' '),words=text.split(' ');if(words.length<2||words.length>MAX_MANTRA_WORDS||words.some(word=>!/[\p{L}]/u.test(word))||/[\/\u2010-\u2015-]/u.test(text))throw new Error('Mantra must contain 2–5 words');return text}
-function createMantra(selection){
- if(!Array.isArray(selection)||selection.length!==5||selection.some((value,i)=>!Number.isInteger(value)||!answerThemes[i][value]))throw new Error('Complete all five questions');
- const weights=[6,5,2,4,1],signature=selection.reduce((value,choice)=>value*5+choice,0);
- const ranked=mantraCatalog.map((entry,index)=>({entry,score:selection.reduce((sum,choice,i)=>sum+(answerThemes[i][choice].some(tag=>entry.tags.includes(tag))?weights[i]:0),0),tie:(signature*31+index*17)%97})).sort((a,b)=>b.score-a.score||b.tie-a.tie);
- return validateMantra(ranked[0].entry.text);
-}
-function renderResult(){currentMantra=createMantra(answers);$('resultTitle').textContent=`${nickname}, αυτός είναι ο ρυθμός σου.`;$('mantraText').textContent=currentMantra;$('status').textContent='';$('answerSummary').replaceChildren();questions.forEach((q,i)=>{const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=q.question;dd.textContent=q.answers[answers[i]];$('answerSummary').append(dt,dd)});show('result');$('resultTitle').focus({preventScroll:true})}
-function generate(){if(answers.some(a=>a===null))return;show('loading');clearTimeout(generationTimer);generationTimer=setTimeout(renderResult,1100)}
-function clearNameError(){$('nickname').removeAttribute('aria-invalid');$('nameHint').classList.remove('error');$('nameHint').textContent='Το όνομά σου θα εμφανιστεί στο mantra.'}
+// Reviewed offline generation, with the revised AI brief embedded above.
+function renderResult(proposed=null){currentMantra=safeMantra(proposed??createMantra(answers),answers);$('resultTitle').textContent=`${nickname}, αυτός είναι ο ρυθμός σου.`;$('mantraText').textContent=toGreekUpper(currentMantra);$('status').textContent='';$('answerSummary').replaceChildren();questions.forEach((q,i)=>{const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=q.question;dd.textContent=q.answers[answers[i]];$('answerSummary').append(dt,dd)});show('result');$('resultTitle').focus({preventScroll:true})}
+function generate(){if(answers.some(a=>a===null))return;show('loading');clearTimeout(generationTimer);generationTimer=setTimeout(()=>{try{renderResult()}catch(_){renderResult(FALLBACK_MANTRA)}},1100)}
+function clearNameError(){$('nickname').removeAttribute('aria-invalid');$('nameHint').classList.remove('error');$('nameHint').textContent='Το όνομά σου θα εμφανιστεί πάνω από το mantra.'}
 for(const event of ['input','change'])$('nickname').addEventListener(event,()=>{nickname=$('nickname').value.trim().slice(0,32);if(nickname)clearNameError();remember()});
 function beginGame(event){if(event)event.preventDefault();nickname=$('nickname').value.trim().slice(0,32);if(!nickname){$('nickname').setAttribute('aria-invalid','true');$('nameHint').classList.add('error');$('nameHint').textContent='Γράψε πρώτα το όνομα ή το nick σου για να ξεκινήσεις.';$('nickname').focus();return}clearNameError();renderQuestion()}
 $('startButton').addEventListener('click',beginGame);
@@ -395,9 +578,9 @@ $('nextButton').addEventListener('click',()=>{if(answers[step]===null)return;if(
 $('backButton').addEventListener('click',()=>{if(step>0){step--;renderQuestion()}else{show('welcome');$('nickname').focus()}});
 $('editButton').addEventListener('click',()=>{step=0;renderQuestion()});
 $('restartButton').addEventListener('click',()=>{clearTimeout(generationTimer);step=0;answers=Array(questions.length).fill(null);nickname='';$('nickname').value='';clearNameError();remember();show('welcome');$('nickname').focus()});
-$('copyButton').addEventListener('click',async()=>{const text=validateMantra(currentMantra);try{await navigator.clipboard.writeText(text);$('status').textContent='Το mantra σου αντιγράφηκε!'}catch(_){const area=document.createElement('textarea');area.value=text;area.style.cssText='position:fixed;top:0;left:0;width:1px;height:1px;opacity:0';document.body.append(area);area.select();const copied=document.execCommand('copy');area.remove();$('status').textContent=copied?'Το mantra σου αντιγράφηκε!':'Επίλεξε το κείμενο του mantra για να το αντιγράψεις.'}});
+$('copyButton').addEventListener('click',async()=>{const text=toGreekUpper(validateMantra(currentMantra));try{await navigator.clipboard.writeText(text);$('status').textContent='Το mantra σου αντιγράφηκε!'}catch(_){const area=document.createElement('textarea');area.value=text;area.style.cssText='position:fixed;top:0;left:0;width:1px;height:1px;opacity:0';document.body.append(area);area.select();const copied=document.execCommand('copy');area.remove();$('status').textContent=copied?'Το mantra σου αντιγράφηκε!':'Επίλεξε το κείμενο του mantra για να το αντιγράψεις.'}});
 function xml(text){return text.replace(/[<>&"']/g,ch=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&apos;'}[ch]))}
-$('downloadButton').addEventListener('click',()=>{const text=validateMantra(currentMantra),context=document.createElement('canvas').getContext('2d');context.font='italic 900 100px Arial';const size=Math.min(102,Math.floor(1060/context.measureText(text).width*100));const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000"><title>${xml(text)}</title><text x="600" y="530" fill="#e20074" font-family="Arial, sans-serif" font-size="${size}" font-weight="900" font-style="italic" text-anchor="middle">${xml(text)}</text></svg>`;const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='my-running-mantra.svg';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('status').textContent='Το mantra σου αποθηκεύτηκε με διάφανο φόντο.'});
+$('downloadButton').addEventListener('click',()=>{const text=toGreekUpper(validateMantra(currentMantra)),context=document.createElement('canvas').getContext('2d');context.font='italic 900 100px Arial';const size=Math.min(102,Math.floor(1060/context.measureText(text).width*100));const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000"><title>${xml(text)}</title><text x="600" y="530" fill="#e20074" font-family="Arial, sans-serif" font-size="${size}" font-weight="900" font-style="italic" text-anchor="middle">${xml(text)}</text></svg>`;const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='my-running-mantra.svg';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('status').textContent='Το mantra σου αποθηκεύτηκε με διάφανο φόντο.'});
 restore();$('nickname').value=nickname;
 })();
 </script>
