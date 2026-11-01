@@ -25,7 +25,7 @@
    <label class="nickname-label" for="nickname">Συμπλήρωσε το όνομα ή το nick σου και ξεκίνα!</label>
    <input class="nickname" id="nickname" name="nickname" autocomplete="nickname" maxlength="32" required placeholder="Το όνομα ή το nick σου" aria-label="Το όνομα ή το nick σου" aria-describedby="nameHint">
    <p class="name-hint" id="nameHint" aria-live="polite">Το όνομά σου θα εμφανιστεί στο mantra.</p>
-   <button class="primary" id="startButton" type="submit">ΞΕΚΙΝΑ</button>
+   <button class="primary" id="startButton" type="button">ΞΕΚΙΝΑ</button>
    <p class="welcome-foot">WHAT DRIVES YOU?</p>
   </form>
  </section>
@@ -140,7 +140,10 @@ function renderResult(){const result=createMantra(answers);$('resultTitle').text
 function generate(){if(answers.some(a=>a===null))return;show('loading');clearTimeout(generationTimer);generationTimer=setTimeout(renderResult,1100)}
 function clearNameError(){$('nickname').removeAttribute('aria-invalid');$('nameHint').classList.remove('error');$('nameHint').textContent='Το όνομά σου θα εμφανιστεί στο mantra.'}
 for(const event of ['input','change'])$('nickname').addEventListener(event,()=>{nickname=$('nickname').value.trim().slice(0,32);if(nickname)clearNameError();remember()});
-$('startForm').addEventListener('submit',event=>{event.preventDefault();nickname=$('nickname').value.trim().slice(0,32);if(!nickname){$('nickname').setAttribute('aria-invalid','true');$('nameHint').classList.add('error');$('nameHint').textContent='Γράψε πρώτα το όνομα ή το nick σου για να ξεκινήσεις.';$('nickname').focus();return}clearNameError();renderQuestion()});
+function beginGame(event){if(event)event.preventDefault();nickname=$('nickname').value.trim().slice(0,32);if(!nickname){$('nickname').setAttribute('aria-invalid','true');$('nameHint').classList.add('error');$('nameHint').textContent='Γράψε πρώτα το όνομα ή το nick σου για να ξεκινήσεις.';$('nickname').focus();return}clearNameError();renderQuestion()}
+$('startButton').addEventListener('click',beginGame);
+$('startForm').addEventListener('submit',beginGame);
+$('nickname').addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.isComposing)beginGame(event)});
 $('nextButton').addEventListener('click',()=>{if(answers[step]===null)return;if(step<questions.length-1){step++;renderQuestion()}else generate()});
 $('backButton').addEventListener('click',()=>{if(step>0){step--;renderQuestion()}else{show('welcome');$('nickname').focus()}});
 $('editButton').addEventListener('click',()=>{step=0;renderQuestion()});
