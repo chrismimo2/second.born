@@ -2,6 +2,17 @@
 
 A standalone Greek questionnaire using the exact five questions and 25 answer choices in `Tele_Mantra_v4.pdf`. All choices are personal preferences; there are no correct or incorrect answers.
 
+## Upload to Netlify
+
+1. Extract the downloaded ZIP.
+2. Open <https://app.netlify.com/drop> and sign in to your Netlify account.
+3. Drag in the extracted folder that directly contains `index.html`.
+4. Open the website URL Netlify provides. Enter a nickname and press **ΞΕΚΙΝΑ**.
+
+No build command, installation, API key, or environment setting is required for this preview. For an existing Netlify site, open that site's **Deploys** tab and upload the same folder in its manual deployment area. Use the URL of the new deployment to test the uploaded version.
+
+## Open locally
+
 Open `index.html` in a modern browser to play. The game also works without an Internet connection. To serve it locally from the repository root:
 
 ```sh
