@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#e20074">
+<meta name="description" content="Πέντε ερωτήσεις. Ο δικός σου ρυθμός. Το προσωπικό σου Running Mantra.">
+<title>Το δικό σου Running Mantra · Telekom</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23e20074'/%3E%3Ctext x='24' y='36' text-anchor='middle' fill='white' font-family='Georgia' font-size='38' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+<style>
+:root{--magenta:#e20074;--pink:#f0008b;--dark:#242022;--muted:#6b6267;--line:#eadfe5;--white:#fff;--ease:cubic-bezier(.2,.7,.2,1);font-family:Arial,"Helvetica Neue",system-ui,sans-serif;color:var(--dark);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;background:#eee9ed}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.38}button,input,label{-webkit-tap-highlight-color:transparent}button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #222;outline-offset:5px}button:disabled:focus-visible{outline:none}[hidden]{display:none!important}.game{width:100%;max-width:540px;min-height:100svh;margin:auto;background:white;overflow:hidden;position:relative}.screen{min-height:100svh;display:flex;flex-direction:column}.brand{display:grid;place-items:center;height:139px;flex-shrink:0;background:linear-gradient(160deg,#f00086,var(--magenta) 72%);position:relative;overflow:hidden}.brand:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#9f005130,transparent 70%);pointer-events:none}.logo{width:61px;height:74px;position:relative;z-index:1;color:white}.progress-area{height:73px;position:relative;background:linear-gradient(110deg,#b50062,var(--pink));padding:38px 44px 0}.track{height:2px;background:#fff9;position:relative;display:flex;justify-content:space-between;align-items:center}.stop{display:block;flex:0 0 11px;width:11px;height:11px;background:#fff;border-radius:50%;transition:box-shadow .25s}.stop.done{box-shadow:0 0 0 4px #ffffff35}.runner{position:absolute;width:38px;height:42px;bottom:4px;left:var(--position,0%);transform:translateX(-50%);transition:left .4s var(--ease);color:#202020}.progress-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.pattern{height:62px;flex-shrink:0;background:repeating-linear-gradient(112deg,transparent 0 58px,#a000552e 58px 111px,transparent 111px 164px),linear-gradient(130deg,#ff249c,var(--magenta));margin-top:auto}.content{padding:40px 42px 26px;display:flex;flex-direction:column;flex:1}.question-title{font-size:25px;line-height:1.22;letter-spacing:-.6px;font-weight:750;color:var(--magenta);margin:0 0 30px;min-height:92px}.answers{display:grid;gap:18px;margin:0;padding:0;border:0}.answer{display:flex;align-items:center;position:relative;border:2px solid var(--pink);border-radius:26px;min-height:45px;padding:9px 15px;font-size:16px;line-height:1.22;cursor:pointer;transition:background .15s,color .15s,transform .15s}.answer:hover{background:#fff1f8}.answer.is-selected{color:white;background:var(--pink)}.answer input{position:absolute;opacity:0;width:1px;height:1px}.answer:has(input:focus-visible){outline:3px solid #242022;outline-offset:4px}.answer span{display:block}.quiz-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;padding-top:36px}.next,.primary,.action{border:0;border-radius:5px;background:var(--dark);color:white;padding:12px 17px;font-weight:700;font-size:14px;min-height:44px;transition:transform .15s,background .15s}.next:hover:not(:disabled),.primary:hover:not(:disabled){background:#000;transform:translateY(-1px)}.back{background:transparent;color:var(--pink);border:0;padding:7px 0;min-width:48px;min-height:44px;display:grid;place-items:center}.back svg{width:45px;height:20px}.welcome{background:repeating-linear-gradient(111deg,transparent 0 144px,#a900512b 144px 212px,transparent 212px 300px),linear-gradient(130deg,#ff2ba2 0%,#ed0083 50%,#bd005f 100%);color:white;text-align:center}.welcome .brand{height:224px;background:linear-gradient(160deg,#e20074,#f00085);border-bottom:36px solid #ac005c44}.welcome .logo{width:91px;height:108px}.welcome-content{display:flex;flex-direction:column;align-items:center;padding:45px 30px 48px;flex:1}.welcome h1{font-size:clamp(29px,7.6vw,42px);font-weight:800;line-height:1.12;letter-spacing:-1px;margin:0 0 30px;text-shadow:0 2px #452638}.welcome-copy{font-size:20px;line-height:1.35;max-width:340px;margin:0}.welcome-copy:after{content:"";display:block;width:113px;height:6px;margin:16px auto 29px;background:var(--dark);border-radius:100% 70% 50% 90%;transform:rotate(-4deg)}.nickname-label{display:block;font-size:13px;line-height:1.4;margin:0 0 10px}.nickname{width:min(260px,100%);height:43px;background:#fff;color:var(--dark);border:0;border-radius:24px;padding:8px 17px;text-align:center;font-size:18px}.nickname:focus-visible{outline-color:white;box-shadow:0 0 0 2px var(--dark)}.welcome .primary{display:block;margin:55px auto 0;min-width:103px}.welcome .primary:disabled{opacity:.65}.welcome-foot{margin:25px 0 0;font-size:11px;letter-spacing:1.2px;opacity:.85}.loading{background:linear-gradient(140deg,#ff1f9a,#e20074 70%);color:white;text-align:center}.loading-content{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:35px 25px 100px}.loading h2{font-size:32px;line-height:1.2;letter-spacing:-.7px;margin:35px 0 0}.lace-loader{width:100px;height:100px;border:9px solid #ffb8dd55;border-top-color:white;border-bottom-color:white;border-radius:38% 62% 47% 53%;animation:turn 1.3s linear infinite}.result .content{padding-top:29px;gap:18px}.eyebrow{font-size:11px;letter-spacing:1.6px;font-weight:700;color:var(--magenta);margin:0;text-transform:uppercase}.result-title{font-size:27px;line-height:1.2;margin:0;letter-spacing:-.6px;overflow-wrap:anywhere}.mantra-card{position:relative;min-height:245px;border:1px solid #f3c2dc;border-radius:20px;display:flex;align-items:center;justify-content:center;padding:35px 19px;background:#fff7fb;overflow:hidden}.mantra-card:before,.mantra-card:after{content:"";position:absolute;width:105px;height:27px;border:6px solid var(--magenta);border-radius:80%;transform:rotate(-13deg);opacity:.18;left:-23px;top:19px}.mantra-card:after{left:auto;top:auto;right:-15px;bottom:20px;transform:rotate(-23deg)}.mantra{font-weight:900;font-size:clamp(31px,8.2vw,43px);line-height:1.04;color:var(--magenta);text-align:center;white-space:pre-line;font-style:italic;letter-spacing:-1.8px;margin:0;position:relative;z-index:1}.support{font-size:16px;line-height:1.5;margin:0;color:#62535b}.result-actions{display:flex;flex-wrap:wrap;gap:9px}.action{background:var(--magenta);font-size:12px;flex:1}.action.secondary{background:#f4eaf0;color:#6d2450}.restart{align-self:center;background:transparent;border:0;text-decoration:underline;text-underline-offset:4px;color:var(--muted);padding:12px;font-size:13px}.status{min-height:20px;margin:0;font-size:13px;color:#685160}.answer-summary{border-top:1px solid var(--line);font-size:13px;padding-top:15px;color:var(--muted)}.answer-summary summary{cursor:pointer;padding:5px 0}.answer-summary dt{font-weight:700;color:var(--dark);margin:13px 0 5px}.answer-summary dd{margin:0;line-height:1.4}.screen:focus{outline:0}.noscript{padding:20px;background:#fff;color:#222}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.name-hint{font-size:13px;line-height:1.4;min-height:1.4em;margin:10px 0 0;max-width:300px}.name-hint.error{font-weight:700}.nickname[aria-invalid="true"]{outline:2px solid var(--dark);outline-offset:3px}
+@keyframes turn{to{transform:rotate(360deg)}}@media(min-width:650px){body{padding:26px}.game{border-radius:12px;box-shadow:0 15px 65px #4e14331c}.game,.screen{min-height:calc(100svh - 52px)}.welcome-content{padding-top:45px}.welcome .primary{margin-top:65px}.content{padding-top:47px;padding-bottom:31px}.question-title{font-size:27px}.answers{gap:22px}.answer{min-height:47px}}@media(max-width:380px){.content{padding:28px 24px 21px}.question-title{font-size:23px;min-height:83px;margin-bottom:23px}.answers{gap:13px}.answer{font-size:14px;padding:10px 13px}.brand{height:113px}.progress-area{height:60px;padding-top:32px}.pattern{height:45px}.welcome .brand{height:174px}.welcome-content{padding-top:32px}.welcome-copy{font-size:18px}.welcome .primary{margin-top:35px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs><symbol id="telekom-mark" viewBox="0 0 76 88"><path fill="currentColor" d="M8 5h60v26h-5c0-15-6-20-19-20v58c0 8 3 11 12 11v5H20v-5c9 0 12-3 12-11V11c-13 0-19 5-19 20H8zM2 43h11v11H2zm61 0h11v11H63z"/></symbol><symbol id="runner-mark" viewBox="0 0 42 45"><circle cx="27" cy="7" r="5" fill="currentColor"/><path d="m21 15-7 8-10 2m17-10 8 8 9-3M21 16l-2 14 9 11M19 30 8 38l-5-3" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></symbol></defs></svg>
+<main class="game" id="game">
+ <section class="screen welcome" id="welcomeScreen" aria-labelledby="welcomeTitle">
+  <header class="brand"><svg class="logo" role="img" aria-label="Telekom"><use href="#telekom-mark"/></svg></header>
+  <form class="welcome-content" id="startForm" novalidate>
+   <h1 id="welcomeTitle">ΤΟ ΔΙΚΟ ΣΟΥ<br>RUNNING MANTRA</h1>
+   <p class="welcome-copy">Απάντησε στις ερωτήσεις,<br>και δημιούργησε το δικό σου<br>προσωπικό AI Running Mantra</p>
+   <label class="nickname-label" for="nickname">Συμπλήρωσε το όνομα ή το nick σου και ξεκίνα!</label>
+   <input class="nickname" id="nickname" name="nickname" autocomplete="nickname" maxlength="32" required placeholder="Το όνομα ή το nick σου" aria-label="Το όνομα ή το nick σου" aria-describedby="nameHint">
+   <p class="name-hint" id="nameHint" aria-live="polite">Το όνομά σου θα εμφανιστεί στο mantra.</p>
+   <button class="primary" id="startButton" type="button">ΞΕΚΙΝΑ</button>
+   <p class="welcome-foot">WHAT DRIVES YOU?</p>
+  </form>
+ </section>
+ <section class="screen quiz" id="quizScreen" aria-labelledby="questionTitle" hidden>
+  <header class="brand"><svg class="logo" role="img" aria-label="Telekom"><use href="#telekom-mark"/></svg></header>
+  <div class="progress-area" role="progressbar" aria-label="Πρόοδος ερωτήσεων" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" id="progress">
+   <div class="track" aria-hidden="true"><i class="stop"></i><i class="stop"></i><i class="stop"></i><i class="stop"></i><i class="stop"></i><i class="stop"></i><svg class="runner"><use href="#runner-mark"/></svg></div>
+   <span class="progress-label" id="progressLabel">Ερώτηση 1 από 5</span>
+  </div>
+  <div class="content">
+   <h2 class="question-title" id="questionTitle" tabindex="-1"></h2>
+   <div class="answers" role="radiogroup" aria-labelledby="questionTitle" id="answers"></div>
+   <nav class="quiz-nav" aria-label="Πλοήγηση ερωτήσεων">
+    <button class="back" id="backButton" aria-label="Πίσω" type="button"><svg viewBox="0 0 48 20" aria-hidden="true"><path d="M46 10H3m8-8-8 8 8 8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+    <button class="next" id="nextButton" type="button" disabled>ΣΥΝΕΧΕΙΑ</button>
+   </nav>
+  </div>
+  <footer class="pattern" aria-hidden="true"></footer>
+ </section>
+ <section class="screen loading" id="loadingScreen" aria-labelledby="loadingTitle" aria-live="polite" hidden>
+  <header class="brand"><svg class="logo" role="img" aria-label="Telekom"><use href="#telekom-mark"/></svg></header>
+  <div class="loading-content"><div class="lace-loader" aria-hidden="true"></div><h2 id="loadingTitle">Δημιουργούμε<br>το δικό σου<br>AI Running Mantra</h2></div>
+ </section>
+ <section class="screen result" id="resultScreen" aria-labelledby="resultTitle" hidden>
+  <header class="brand"><svg class="logo" role="img" aria-label="Telekom"><use href="#telekom-mark"/></svg></header>
+  <div class="content">
+   <p class="eyebrow">ΤΟ ΔΙΚΟ ΣΟΥ RUNNING MANTRA</p>
+   <h2 class="result-title" id="resultTitle" tabindex="-1"></h2>
+   <div class="mantra-card"><p class="mantra" id="mantraText"></p></div>
+   <p class="support" id="supportText"></p>
+   <div class="result-actions"><button class="action" id="copyButton" type="button">ΑΝΤΙΓΡΑΦΗ</button><button class="action secondary" id="downloadButton" type="button">ΑΠΟΘΗΚΕΥΣΗ SVG</button></div>
+   <p class="status" id="status" role="status"></p>
+   <details class="answer-summary"><summary>Οι απαντήσεις σου</summary><dl id="answerSummary"></dl></details>
+   <button class="restart" id="editButton" type="button">Αλλαγή απαντήσεων</button>
+   <button class="restart" id="restartButton" type="button">Από την αρχή</button>
+  </div>
+  <footer class="pattern" aria-hidden="true"></footer>
+ </section>
+</main>
+<noscript><p class="noscript">Ενεργοποίησε τη JavaScript στον browser σου για να δημιουργήσεις το δικό σου Running Mantra.</p></noscript>
+<script id="questionsData" type="application/json">[
+  {
+    "question": "Τι σημαίνει για σένα προσωπική νίκη;",
+    "answers": [
+      "Να ξεπεράσω το προηγούμενο ρεκόρ μου.",
+      "Να επιστρέψω μετά από μια δύσκολη περίοδο.",
+      "Να κάνω την αρχή.",
+      "Να κρατήσω μια υπόσχεση στον εαυτό μου.",
+      "Να απολαύσω τη διαδρομή, χωρίς χρονόμετρο."
+    ]
+  },
+  {
+    "question": "Για ποιον ή για τι αξίζει να προσπαθείς λίγο παραπάνω;",
+    "answers": [
+      "Για μένα. Αυτή τη φορά.",
+      "Για τα παιδιά μου.",
+      "Για τον άνθρωπο που πιστεύει σε μένα.",
+      "Για κάποιον που μου λείπει.",
+      "Για έναν σκοπό μεγαλύτερο από μένα."
+    ]
+  },
+  {
+    "question": "Τι σου δίνει ώθηση όταν χάνεις το κίνητρό σου;",
+    "answers": [
+      "Ένας μικρός, εφικτός στόχος.",
+      "Ένα «πάμε μαζί» από φίλο.",
+      "Μια καινούργια διαδρομή.",
+      "Λίγη ξεκούραση και μια νέα αρχή.",
+      "Ο καφές που με περιμένει στο τέλος."
+    ]
+  },
+  {
+    "question": "Τι θα ήθελες να σου φωνάζει κάποιος που σε στηρίζει;",
+    "answers": [
+      "«Με τον δικό σου ρυθμό!»",
+      "«Πάμε μαζί!»",
+      "«Κοίτα πόσο δρόμο έχεις ήδη κάνει!»",
+      "«Δεν χρειάζεται να αποδείξεις τίποτα!»",
+      "«Χαμογέλα, είναι η στιγμή σου!»"
+    ]
+  },
+  {
+    "question": "Τι σε βοηθά να βάλεις τα αθλητικά σου και να βγεις από την πόρτα;",
+    "answers": [
+      "Ένα τραγούδι που δεν ακούγεται καθιστά.",
+      "Η ανάγκη να κλείσω λίγο τις οθόνες.",
+      "Ο σκύλος μου. Δεν δέχεται αναβολές.",
+      "Μια βόλτα με τα παιδιά.",
+      "Μια γωνιά της πόλης που θέλω να ανακαλύψω."
+    ]
+  }
+]</script>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id),questions=JSON.parse($('questionsData').textContent);
+const storageKey='telekom-mantra-v4',screens=['welcome','quiz','loading','result'];
+let step=0,answers=Array(questions.length).fill(null),nickname='',generationTimer=null;
+function remember(){try{sessionStorage.setItem(storageKey,JSON.stringify({nickname,step,answers}))}catch(_){}}
+function restore(){try{const data=JSON.parse(sessionStorage.getItem(storageKey)||'null');if(!data||!Array.isArray(data.answers))return;nickname=typeof data.nickname==='string'?data.nickname.slice(0,32):'';answers=questions.map((q,i)=>Number.isInteger(data.answers[i])&&data.answers[i]>=0&&data.answers[i]<q.answers.length?data.answers[i]:null);step=Number.isInteger(data.step)&&data.step>=0&&data.step<questions.length?data.step:0}catch(_){}}
+function show(name){screens.forEach(key=>$(key+'Screen').hidden=key!==name);window.scrollTo(0,0)}
+function renderQuestion(){show('quiz');const question=questions[step];$('questionTitle').textContent=question.question;$('answers').replaceChildren();question.answers.forEach((text,index)=>{const label=document.createElement('label');label.className='answer'+(answers[step]===index?' is-selected':'');const input=document.createElement('input');input.type='radio';input.name='answer';input.value=String(index);input.checked=answers[step]===index;input.addEventListener('change',()=>{answers[step]=index;for(const option of $('answers').children)option.classList.toggle('is-selected',option.querySelector('input').checked);$('nextButton').disabled=false;remember()});const span=document.createElement('span');span.textContent=text;label.append(input,span);$('answers').append(label)});$('nextButton').disabled=answers[step]===null;$('progress').setAttribute('aria-valuenow',String(step+1));$('progress').setAttribute('aria-valuetext',`Ερώτηση ${step+1} από ${questions.length}`);$('progressLabel').textContent=`Ερώτηση ${step+1} από ${questions.length}`;$('progress').style.setProperty('--position',`${step/5*100}%`);document.querySelectorAll('.stop').forEach((stop,i)=>stop.classList.toggle('done',i<=step));$('questionTitle').focus({preventScroll:true});remember()}
+// Local preview copy: these compositions do not call or impersonate an AI service.
+function createMantra(selection){
+ const openings=['Ξεπερνώ','Ξαναβρίσκω','Ξεκινώ','Κρατάω','Απολαμβάνω'];
+ const meanings=['τον εαυτό μου.','τον ρυθμό μου.','τη δική μου αρχή.','την υπόσχεσή μου.','κάθε διαδρομή.'];
+ const dedications=['Σήμερα, για μένα.','Για τα παιδιά μου.','Για όσους με πιστεύουν.','Για σένα που μου λείπεις.','Για κάτι πιο μεγάλο.'];
+ const motivations=['Ένας μικρός στόχος αρκεί για το επόμενο βήμα.','Ένα «πάμε μαζί» κάνει τη διαδρομή πιο όμορφη.','Κάθε νέα διαδρομή κρύβει μια νέα αρχή.','Παίρνω μια ανάσα και ξεκινώ ξανά.','Κι ένας καφές στο τέλος είναι ένας καλός λόγος.'];
+ const launch=['Βάζω το τραγούδι μου και βγαίνω.','Αφήνω την οθόνη και βρίσκω τον δρόμο.','Το λουρί στο χέρι. Η αναβολή τελείωσε.','Μαζί με τα παιδιά, κάθε βήμα μετράει.','Μια καινούργια γωνιά της πόλης με περιμένει.'];
+ return {lines:[openings[selection[0]],meanings[selection[0]],dedications[selection[1]]],support:`${motivations[selection[2]]} ${questions[3].answers[selection[3]]} ${launch[selection[4]]}`};
+}
+function renderResult(){const result=createMantra(answers);$('resultTitle').textContent=`${nickname}, αυτός είναι ο ρυθμός σου.`;$('mantraText').textContent=result.lines.join('\n');$('supportText').textContent=result.support;$('status').textContent='';$('answerSummary').replaceChildren();questions.forEach((q,i)=>{const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=q.question;dd.textContent=q.answers[answers[i]];$('answerSummary').append(dt,dd)});show('result');$('resultTitle').focus({preventScroll:true})}
+function generate(){if(answers.some(a=>a===null))return;show('loading');clearTimeout(generationTimer);generationTimer=setTimeout(renderResult,1100)}
+function clearNameError(){$('nickname').removeAttribute('aria-invalid');$('nameHint').classList.remove('error');$('nameHint').textContent='Το όνομά σου θα εμφανιστεί στο mantra.'}
+for(const event of ['input','change'])$('nickname').addEventListener(event,()=>{nickname=$('nickname').value.trim().slice(0,32);if(nickname)clearNameError();remember()});
+function beginGame(event){if(event)event.preventDefault();nickname=$('nickname').value.trim().slice(0,32);if(!nickname){$('nickname').setAttribute('aria-invalid','true');$('nameHint').classList.add('error');$('nameHint').textContent='Γράψε πρώτα το όνομα ή το nick σου για να ξεκινήσεις.';$('nickname').focus();return}clearNameError();renderQuestion()}
+$('startButton').addEventListener('click',beginGame);
+$('startForm').addEventListener('submit',beginGame);
+$('nickname').addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.isComposing)beginGame(event)});
+$('nextButton').addEventListener('click',()=>{if(answers[step]===null)return;if(step<questions.length-1){step++;renderQuestion()}else generate()});
+$('backButton').addEventListener('click',()=>{if(step>0){step--;renderQuestion()}else{show('welcome');$('nickname').focus()}});
+$('editButton').addEventListener('click',()=>{step=0;renderQuestion()});
+$('restartButton').addEventListener('click',()=>{clearTimeout(generationTimer);step=0;answers=Array(questions.length).fill(null);nickname='';$('nickname').value='';clearNameError();remember();show('welcome');$('nickname').focus()});
+$('copyButton').addEventListener('click',async()=>{const text=`${nickname}\n\n${$('mantraText').textContent}\n\n${$('supportText').textContent}`;try{await navigator.clipboard.writeText(text);$('status').textContent='Το mantra σου αντιγράφηκε!'}catch(_){const area=document.createElement('textarea');area.value=text;area.style.cssText='position:fixed;top:0;left:0;width:1px;height:1px;opacity:0';document.body.append(area);area.select();const copied=document.execCommand('copy');area.remove();$('status').textContent=copied?'Το mantra σου αντιγράφηκε!':'Επίλεξε το κείμενο του mantra για να το αντιγράψεις.'}});
+function xml(text){return text.replace(/[<>&"']/g,ch=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&apos;'}[ch]))}
+$('downloadButton').addEventListener('click',()=>{const lines=createMantra(answers).lines;const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000"><title>${xml(nickname)} — Running Mantra</title><g fill="#e20074" font-family="Arial, sans-serif" font-size="82" font-weight="900" font-style="italic" text-anchor="middle">${lines.map((line,i)=>`<text x="600" y="${360+i*115}">${xml(line)}</text>`).join('')}</g></svg>`;const url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='my-running-mantra.svg';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('status').textContent='Το mantra σου αποθηκεύτηκε με διάφανο φόντο.'});
+restore();$('nickname').value=nickname;
+})();
+</script>
+</body>
+</html>
